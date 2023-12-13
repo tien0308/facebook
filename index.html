@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook(clone)</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.5.1-web/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+        <div class="nav-left">
+            <div class="logo">
+                 <img src="./img/logo_fb.png" alt="">
+            </div>
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Tìm kiến trên Facebook">
+
+            </div>
+
+        </div>
+
+        
+        <div class="nav-center">
+            <i class="fa-solid fa-house"></i>
+            <a href=""><i class="fa-solid fa-user-group"></i></a>
+            <a href=""><i class="fa-solid fa-tv"></i></a>
+            <a href=""><i class="fa-solid fa-store"></i></a>
+            <a href=""><i class="fa-solid fa-gamepad"></i></a>
+
+        </div>
+
+        <div class="nav-right">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-brands fa-facebook-messenger"></i>
+            <i class="fa-solid fa-bell"></i>
+            <img src="./img/avatar-profile.jpg" alt="" class="avatar-profile" onclick="openCard()">
+            <div class="card-menu-wrap" id="cardWrap">
+                <div class="card-menu">
+                    <div class="profile-menu">
+                        <img src="./img/avatar-profile.jpg" alt="">
+                        <p>Vũ Văn Tiến</p>
+                        <span></span>
+                        <div class="dark">
+                            <div class="switch-wp">
+                                <input type="checkbox" id="switch" hidden>
+                                <label for="switch"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="card-menu-items">
+                        <img src="./img/setting.png" alt="">
+                        <p>Cài đặt & quyền riêng tư</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="card-menu-items">
+                        <img src="./img/icon-help.png" alt="">
+                        <p>Trợ giúp & hỗ trợ</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="card-menu-items">
+                        <img src="./img/display.png" alt="">
+                        <p>Màn hình & trợ năng</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="card-menu-items">
+                        <img src="./img/feedback.png" alt="">
+                        <p>Đóng góp ý kiến</p>
+                        
+                    </a>
+                    <a href="#" class="card-menu-items">
+                        <img src="./img/logout.png" alt="">
+                        <p>Đăng xuất</p>                        
+                    </a>
+                    
+                </div>
+            </div>
+
+        </div> 
+        </nav>
+
+        <div class="main">
+            <div class="main-left">
+                <div class="img">
+                    <img src="./img/avatar-profile.jpg" alt="">
+                    <p>Vũ Văn Tiến</p>
+                </div>
+                <div class="img">
+                    <img src="./img/saved-icon.png" alt="">
+                    <p>Đã lưu</p>
+                </div>
+                <div class="img">
+                    <img src="./img/group-icon.png" alt="">
+                    <p>Nhóm</p>
+                </div>
+                <div class="img">
+                    <img src="./img/marketplace-icon.png" alt="">
+                    <p>Marketplace</p>
+                </div>
+                <div class="img">
+                    <img src="./img/messenger-icon.png" alt="">
+                    <p>Messenger</p>
+                </div>
+                <div class="img">
+                    <img src="./img/watch-icon.png" alt="">
+                    <p>Video</p>
+                </div>
+                <div class="img">
+                    <img src="./img/more-icon.png" alt="">
+                    <p>Xem thêm</p>
+                </div>
+                <hr>
+
+                <div class="shortcuts">
+                    <p>Lối tắt của bạn</p>
+                    <a href="#">Edit</a>
+                </div>
+
+                <div class="img">
+                    <img src="./img/blood.png" alt="">
+                    <p>Hiến máu</p>
+                </div>
+                <div class="img">
+                    <img src="./img/atm-icon.png" alt="">
+                    <p>Đơn đặt hàng và thanh toán</p>
+                </div>
+                <div class="img">
+                    <img src="./img/feed-icon.png" alt="">
+                    <p>Hoạt động gần đây với quảng cáo</p>
+                </div>   
+            </div>
+
+            <div class="main-center">
+                <div class="top-box">
+                    <div class="my-story">
+                        <img src="./img/avatar-profile.jpg" alt="">
+
+                        <div class="upload">
+                            <img src="./img/plus-icon.jpg" alt="">
+                            <p>Tạo tin</p>
+                        </div>
+                    </div>
+
+                    <div class="friend-story">
+                        <img src="./img/story1.jpg" alt="">
+                        <div class="friend-profile">
+                            <img src="./img/avatar1.jpg" alt="">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="friend-name">
+                            <p>Lan Hương</p>
+                        </div>
+                    </div>
+                    <div class="friend-story">
+                        <img src="./img/story2.jpg" alt="">
+                        <div class="friend-profile">
+                            <img src="./img/avatar8.jpg" alt="">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="friend-name">
+                            <p>Long</p>
+                        </div>
+                    </div>
+                    <div class="friend-story">
+                        <img src="./img/story3.jpg" alt="">
+                        <div class="friend-profile">
+                            <img src="./img/avatar11.jpg" alt="">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="friend-name">
+                            <p>Vũ Văn Chinh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="create-post">
+                    <div class="ptop">
+                        <img src="./img/avatar-profile.jpg" alt="">
+                        <input type="text" placeholder="Vũ Văn ơi, bạn đang nghĩ gì thế ?">
+                    </div>
+                <hr>
+                <div class="pbottom">
+                    <div class="post-icon">
+                        <i class="fa-solid fa-video red"></i>
+                        <p>Video trực tiếp</p>
+                    </div>
+                    <div class="post-icon">
+                        <i class="fa-solid fa-images green"></i>
+                        <p>Ảnh/video</p>
+                    </div>
+                    <div class="post-icon">
+                        <i class="fa-solid fa-face-grin yellow"></i>
+                        <p>Cảm xúc/hoạt động</p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="friends-post">
+                    <div class="friends-ptop">
+                        <div class="img-name">
+                            <img src="./img/avatar5.jpg" alt="">
+                            <div class="friends-name">
+                                <p class="friends-name">Nguyễn Ngọc Mai</p>
+                                <p class="time">2h. <i class="fa-solid fa-users"></i> </p>
+                            </div>
+                        </div>
+                    <div class="menu">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    </div>
+                    <img src="./img/info1.jpg" alt="">
+                    <div class="info">
+                        <div class="post-icons">
+                            <img src="./img/like.png" alt="">
+                            <img src="./img/red-heart-icon.jpg" alt="">
+                            <img src="./img/free-haha.png" alt="">
+                            <p>1K</p>
+                        </div>
+
+                        <div class="comments">
+                            <p>200 Bình luận</p>
+                            <p>100 Chia sẻ</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="like">
+                        <div class="like-icon">
+                            <i class="fa-solid fa-thumbs-up active"></i>
+                            <p>Thích</p>
+                        </div>
+
+                        <div class="like-icon">
+                            <i class="fa-solid fa-message"></i>
+                            <p>Bình luận</p>
+                        </div>
+
+                        <div class="like-icon">
+                            <i class="fa-solid fa-share"></i>
+                            <p>Chia sẻ</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="comment-wrapper">
+                        <img src="./img/avatar-profile.jpg" alt="">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="comment-search">
+                        <input type="text" placeholder="Viết bình luận">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <i class="fa-solid fa-camera"></i>
+                        <i class="fa-regular fa-note-sticky"></i>
+
+
+                    </div>
+                </div>
+
+                <div class="friends-post">
+                    <div class="friends-ptop">
+                        <div class="img-name">
+                            <img src="./img/avatar1.jpg" alt="">
+                            <div class="friends-name">
+                                <p class="friends-name">Lan Hương</p>
+                                <p class="time">1h. <i class="fa-solid fa-users"></i> </p>
+                            </div>
+                        </div>
+                    <div class="menu">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    </div>
+                    <img src="./img/info2.jpg" alt="">
+                    <div class="info">
+                        <div class="post-icons">
+                            <img src="./img/like.png" alt="">
+                            <img src="./img/red-heart-icon.jpg" alt="">
+                            <img src="./img/free-haha.png" alt="">
+                            <p>25K</p>
+                        </div>
+
+                        <div class="comments">
+                            <p>200 Bình luận</p>
+                            <p>1K Chia sẻ</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="like">
+                        <div class="like-icon">
+                            <i class="fa-solid fa-thumbs-up active"></i>
+                            <p>Thích</p>
+                        </div>
+
+                        <div class="like-icon">
+                            <i class="fa-solid fa-message"></i>
+                            <p>Bình luận</p>
+                        </div>
+
+                        <div class="like-icon">
+                            <i class="fa-solid fa-share"></i>
+                            <p>Chia sẻ</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="comment-wrapper">
+                        <img src="./img/avatar-profile.jpg" alt="">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="comment-search">
+                        <input type="text" placeholder="Viết bình luận">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <i class="fa-solid fa-camera"></i>
+                        <i class="fa-regular fa-note-sticky"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="main-right">
+                <div class="sponsored-section">
+                    <h4>Sponsored</h4>
+                    <div class="sponsored-link">
+                        <img src="./img/f8-icon.png" alt="">
+                        <p>F8 - Học lập trình để đi làm  <br> <a href="">https://fullstack.edu.vn</a></p>
+                    </div>
+                    <div class="sponsored-link">
+                        <img src="./img/shopee-icon.png" alt="">
+                        <p>Shopee Việt Nam | Mua bán trên ứng di động hoặc website  <br> <a href="">Shopee.vn</a></p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="page-section">
+                    <h4>Your pages and Profile</h4>
+                    <div class="page-links">
+                        <img src="./img/avatar-profile.jpg" alt=""> 
+                        <p>Vũ Văn Tiến</p>   
+                    </div>
+                    <div class="page-links-item">
+                        <img src="./img/tree-speaker-icon.jpg" alt="">
+                        <p>Switch to page</p>
+                    </div>
+                    <div class="page-links-item">
+                        <img src="./img/account-setting.png" alt="">
+                        <p>Create Promotion</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="friend-section">
+                    <h4>Lời mời kết bạn</h4>
+                    <div class="page-links">
+                        <img src="./img/avatar13.jpg" alt="">
+                        <p>Ninh Quế Anh</p>
+                    </div>
+
+                    <div class="buttons">
+                        <button type="submit" class="confirm">Chấp nhận</button>
+                        <button type="submit" class="delete">Xóa</button>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="contact-section">
+                    <div class="contact-search">
+                        <h4>Người liên hệ</h4>
+                        <img src="./img/search.png" alt="">
+                        <img src="./img/see-icon.png" alt="">
+                    </div>
+                    <div class="page-links">
+                        <div class="online">
+                            <img src="./img/avatar1.jpg" alt="">
+                        </div>
+                        <p>Lan Hương</p>
+                    </div>
+                    <div class="page-links">
+                        <div class="online">
+                            <img src="./img/avatar2.jpg" alt="">
+                        </div>
+                        <p>Thắm Nguyễn</p>
+                    </div><div class="page-links">
+                        <div class="online">
+                            <img src="./img/avatar3.jpg" alt="">
+                        </div>
+                        <p>Kiều Linh</p>
+                    </div><div class="page-links">
+                        <div class="online">
+                            <img src="./img/avatar4.jpg" alt="">
+                        </div>
+                        <p>Lan Nguyễn</p>
+                    </div><div class="page-links">
+                        <div class="online">
+                            <img src="./img/avatar5.jpg" alt="">
+                        </div>
+                        <p>Nguyễn Ngọc Mai</p>
+                    </div><div class="page-links">
+                        <div class="online">
+                            <img src="./img/avatar6.jpg" alt="">
+                        </div>
+                        <p>kòy</p>
+                    </div><div class="page-links">
+                        <div class="online">
+                            <img src="./img/avatar7.jpg" alt="">
+                        </div>
+                        <p>Duyệt Ơi</p>
+                    </div><div class="page-links">
+                        <div class="online">
+                            <img src="./img/avatar8.jpg" alt="">
+                        </div>
+                        <p>Long</p>
+                    </div><div class="page-links">
+                        <div class="online">
+                            <img src="./img/avatar9.jpg" alt="">
+                        </div>
+                        <p>Liên Vũ</p>
+                    </div><div class="page-links">
+                        <div class="online">
+                            <img src="./img/avatar10.jpg" alt="">
+                        </div>
+                        <p>Hiền Vũ</p>
+                    </div><div class="page-links">
+                        <div class="online">
+                            <img src="./img/avatar11.jpg" alt="">
+                        </div>
+                        <p>Vũ Văn Chinh</p>
+                    </div><div class="page-links">
+                        <div class="online">
+                            <img src="./img/avatar12.jpg" alt="">
+                        </div>
+                        <p>Tân Vũ Văn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
