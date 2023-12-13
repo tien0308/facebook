@@ -586,7 +586,7 @@ hr {
     color: #fff;
     font-size: 12px;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 10px;
 }
 
 .create-post {
@@ -833,6 +833,7 @@ hr {
     border:none;
     outline: none;
     margin-top: 3px;
+    padding: 0 10px;
 }
 
 .comment-search i {
